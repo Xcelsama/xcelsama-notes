@@ -29,6 +29,7 @@ for (const r of resources) {
   if (!LEVELS[r.level]) errors.push(`${where}: unknown level "${r.level}"`);
   if (typeof r.worksOffline !== 'boolean') errors.push(`${where}: "worksOffline" must be true or false`);
   if (r.type === 'repo' && !r.repo) errors.push(`${where}: repo type needs "repo" URL`);
+  if (r.link && !/^https:\/\//.test(r.link)) errors.push(`${where}: "link" must start with https://`);
   for (const f of r.files ?? []) {
     const p = path.join(root, 'public', f.path);
     if (!fs.existsSync(p)) errors.push(`${where}: file not found: public${f.path}`);
@@ -188,7 +189,8 @@ const fileBtn = (f, primary) =>
 
 const downloads = (r) =>
   (r.files ?? []).map((f, i) => fileBtn(f, i === 0)).join('') +
-  (r.repo ? `<a class="btn primary" href="${esc(r.repo)}">${icon.ext(18)}<span>Open on GitHub</span></a>` : '');
+  (r.repo ? `<a class="btn primary" href="${esc(r.repo)}">${icon.ext(18)}<span>Open on GitHub</span></a>` : '') +
+  (r.link ? `<a class="btn primary" href="${esc(r.link)}">${icon.ext(18)}<span>Visit ${esc(r.title)}</span></a>` : '');
 
 const card = (r) => {
   const hay = `${r.title} ${r.description} ${cats[r.category].title} ${TYPES[r.type]} ${LEVELS[r.level]}`.toLowerCase();
@@ -210,18 +212,16 @@ const courseCard = () => `<section class="card course-card" aria-labelledby="cc-
 
 // ---------- pages ----------
 const featured = resources.filter((r) => r.featured);
-const featuredCards = featured
-  .map((r) => {
-    const f = r.files?.[0];
-    return `<article class="card file">
-    <span class="file-icon" aria-hidden="true">${icon.file(22)}</span>
+const fileCard = (r) => `<article class="card file">
+    <span class="file-icon" aria-hidden="true">${icon[r.link ? 'globe' : 'file'](22)}</span>
     <div class="file-main"><h3><a href="/r/${r.id}/">${esc(r.title)}</a></h3><p>${esc(r.description)}</p></div>
-    ${r.answers ? `<a class="btn" href="/r/${r.id}/">View project</a>` : fileBtn(f, false)}
+    ${r.answers ? `<a class="btn" href="/r/${r.id}/">View project</a>` : r.link ? downloads(r) : fileBtn(r.files[0], false)}
   </article>`;
-  })
-  .join('');
+const featuredCards = featured.map(fileCard).join('');
+const siteCards = resources.filter((r) => r.category === 'free-sites').map(fileCard).join('');
 
 const folderCards = site.categories
+  .filter((c) => c.id !== 'free-sites')
   .map((c) => {
     const n = resources.filter((r) => r.category === c.id).length;
     return `<a class="card folder" href="/library/?category=${c.id}"><h3>${esc(c.title)}</h3><p>${esc(c.blurb)}</p><span class="count">${n} ${n === 1 ? 'item' : 'items'}</span></a>`;
@@ -233,8 +233,8 @@ out('index.html', layout({
   desc: site.description,
   path: '/',
   body: `<section class="wrap hero">
-  <h1>Free coding resources you can keep on your phone.</h1>
-  <p class="lede">I learned to code mostly from a phone. These are the manuals, projects and notes I used on the way. Download them once, keep them, and learn <mark>offline</mark>.</p>
+  <h1>Free HTML, CSS and JavaScript resources to download and keep.</h1>
+  <p class="lede">I know HTML, CSS and JavaScript. These are the manuals, projects and notes I made for them. Download them once, keep them, and learn <mark>offline</mark>.</p>
   <div class="actions">
     <a class="btn primary" href="/library/">Start here</a>
     <a class="btn" href="/projects/">Browse offline projects</a>
@@ -251,6 +251,11 @@ out('index.html', layout({
 <section class="wrap block" aria-labelledby="h-fold">
   <h2 id="h-fold">Pick a folder</h2>
   <div class="grid">${folderCards}</div>
+</section>
+<section class="wrap block" aria-labelledby="h-sites">
+  <h2 id="h-sites">Free sites I use</h2>
+  <p>I use these three to help myself.</p>
+  <div class="stack">${siteCards}</div>
 </section>
 <section class="wrap block">
   <aside class="note big" aria-labelledby="h-why">
@@ -324,18 +329,12 @@ out('repos/index.html', layout({
 
 out('journey/index.html', layout({
   title: 'My journey',
-  desc: 'How Excel (Xcelsama) started coding on a phone, and why he is giving his resources back.',
+  desc: 'Who is behind Xcelsama Notes, and why these resources are free.',
   path: '/journey/',
   body: `<section class="col page">
   <h1>My journey</h1>
-  <p class="lede">I'm Excel, and I go by <a href="https://github.com/${site.githubUser}">${site.githubUser}</a> on GitHub. I taught myself to code.</p>
-  <p>HTML and CSS are my strongest skills, I know JavaScript well, and I've built several Next.js projects.</p>
-  <h2>How it started</h2>
-  <p>When I was coming up in coding, I mostly worked from a mobile phone. I used a GitHub repository to record my progress and my coding journey. It holds some of my code, explained well, and a lot of documents and PDFs on how to code and how to do it properly.</p>
-  <p>It also has projects to build. Some are explained step by step. Others need no Wi-Fi at all: a document editor like Microsoft Word and VS Code are all you need, and the project has the answers.</p>
-  <p>I made many of these resources with AI, to help me come up as a coder and become a top developer.</p>
-  <h2>Why I'm giving it back</h2>
-  <p>Those resources helped me a lot. Now I want to give them back to people, so I put them all in one place that is free to use.</p>
+  <p class="lede">I'm Excel, and I go by <a href="https://github.com/${site.githubUser}">${site.githubUser}</a> on GitHub. I know HTML, CSS and JavaScript.</p>
+  <p>I kept my code, notes and projects in a GitHub repository. Many of them were made with AI to help me learn. They helped me a lot, so I put them in one place and made them free for anyone to use.</p>
   <p class="actions"><a class="btn primary" href="/library/">Start with the library</a></p>
 </section>`,
 }));
@@ -372,7 +371,7 @@ for (const r of resources) {
 
   const offlineNote = r.worksOffline
     ? `<aside class="note"><p class="label">Works offline</p><p>Once the files are downloaded you do not need Wi-Fi. You only need a document editor and VS Code.</p></aside>`
-    : `<aside class="note"><p class="label">Needs internet</p><p>${esc(r.id === 'project-7-weather-app' ? 'This project fetches data from the Open-Meteo API while you test it.' : r.type === 'repo' ? 'This opens GitHub, so you need a connection to read it.' : 'Parts of this need an internet connection to set up.')}</p></aside>`;
+    : `<aside class="note"><p class="label">Needs internet</p><p>${esc(r.id === 'project-7-weather-app' ? 'This project fetches data from the Open-Meteo API while you test it.' : r.link ? 'This opens another website, so you need an internet connection.' : r.type === 'repo' ? 'This opens GitHub, so you need a connection to read it.' : 'Parts of this need an internet connection to set up.')}</p></aside>`;
 
   const prev = inCourse && idx > 0 ? course[idx - 1] : null;
   const next = inCourse && idx < course.length - 1 ? course[idx + 1] : null;

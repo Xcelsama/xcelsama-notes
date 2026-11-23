@@ -9,8 +9,14 @@
     "worksOffline": true,
     "featured": true,
     "files": [
-      { "label": "PDF (99 pages)", "path": "/resources/excel-fullstack-manual.pdf" },
-      { "label": "Word document", "path": "/resources/excel-fullstack-manual.docx" }
+      {
+        "label": "PDF (99 pages)",
+        "path": "/resources/excel-fullstack-manual.pdf"
+      },
+      {
+        "label": "Word document",
+        "path": "/resources/excel-fullstack-manual.docx"
+      }
     ]
   },
   {
@@ -22,7 +28,10 @@
     "level": "beginner",
     "worksOffline": true,
     "files": [
-      { "label": "Word document", "path": "/resources/html-css-js-mastery-manual.docx" }
+      {
+        "label": "Word document",
+        "path": "/resources/html-css-js-mastery-manual.docx"
+      }
     ]
   },
   {
@@ -35,7 +44,10 @@
     "worksOffline": true,
     "featured": true,
     "files": [
-      { "label": "PDF (7 pages)", "path": "/resources/image-fitting-css-debugging-recap.pdf" }
+      {
+        "label": "PDF (7 pages)",
+        "path": "/resources/image-fitting-css-debugging-recap.pdf"
+      }
     ]
   },
   {
@@ -68,8 +80,14 @@
     ],
     "answers": "Fullstack Manual, Chapter 3, Project 1. It includes starter HTML to read and then type yourself.",
     "files": [
-      { "label": "Fullstack Manual (PDF)", "path": "/resources/excel-fullstack-manual.pdf" },
-      { "label": "Fullstack Manual (Word)", "path": "/resources/excel-fullstack-manual.docx" }
+      {
+        "label": "Fullstack Manual (PDF)",
+        "path": "/resources/excel-fullstack-manual.pdf"
+      },
+      {
+        "label": "Fullstack Manual (Word)",
+        "path": "/resources/excel-fullstack-manual.docx"
+      }
     ]
   },
   {
@@ -90,8 +108,14 @@
     ],
     "answers": "Fullstack Manual, Chapter 3, Project 2. It includes the key CSS techniques and a dark mode challenge for when you finish.",
     "files": [
-      { "label": "Fullstack Manual (PDF)", "path": "/resources/excel-fullstack-manual.pdf" },
-      { "label": "Fullstack Manual (Word)", "path": "/resources/excel-fullstack-manual.docx" }
+      {
+        "label": "Fullstack Manual (PDF)",
+        "path": "/resources/excel-fullstack-manual.pdf"
+      },
+      {
+        "label": "Fullstack Manual (Word)",
+        "path": "/resources/excel-fullstack-manual.docx"
+      }
     ]
   },
   {
@@ -111,8 +135,14 @@
     ],
     "answers": "Fullstack Manual, Chapter 3, Project 3. It includes the key HTML structure.",
     "files": [
-      { "label": "Fullstack Manual (PDF)", "path": "/resources/excel-fullstack-manual.pdf" },
-      { "label": "Fullstack Manual (Word)", "path": "/resources/excel-fullstack-manual.docx" }
+      {
+        "label": "Fullstack Manual (PDF)",
+        "path": "/resources/excel-fullstack-manual.pdf"
+      },
+      {
+        "label": "Fullstack Manual (Word)",
+        "path": "/resources/excel-fullstack-manual.docx"
+      }
     ]
   },
   {
@@ -133,8 +163,14 @@
     ],
     "answers": "Fullstack Manual, Chapter 3, Project 4. It includes the key CSS for form styling.",
     "files": [
-      { "label": "Fullstack Manual (PDF)", "path": "/resources/excel-fullstack-manual.pdf" },
-      { "label": "Fullstack Manual (Word)", "path": "/resources/excel-fullstack-manual.docx" }
+      {
+        "label": "Fullstack Manual (PDF)",
+        "path": "/resources/excel-fullstack-manual.pdf"
+      },
+      {
+        "label": "Fullstack Manual (Word)",
+        "path": "/resources/excel-fullstack-manual.docx"
+      }
     ]
   },
   {
@@ -155,8 +191,14 @@
     ],
     "answers": "Fullstack Manual, Chapter 5, Project 5. It includes the core JavaScript structure.",
     "files": [
-      { "label": "Fullstack Manual (PDF)", "path": "/resources/excel-fullstack-manual.pdf" },
-      { "label": "Fullstack Manual (Word)", "path": "/resources/excel-fullstack-manual.docx" }
+      {
+        "label": "Fullstack Manual (PDF)",
+        "path": "/resources/excel-fullstack-manual.pdf"
+      },
+      {
+        "label": "Fullstack Manual (Word)",
+        "path": "/resources/excel-fullstack-manual.docx"
+      }
     ]
   },
   {
@@ -176,8 +218,14 @@
     ],
     "answers": "Fullstack Manual, Chapter 5, Project 6. It includes the data structure for the questions.",
     "files": [
-      { "label": "Fullstack Manual (PDF)", "path": "/resources/excel-fullstack-manual.pdf" },
-      { "label": "Fullstack Manual (Word)", "path": "/resources/excel-fullstack-manual.docx" }
+      {
+        "label": "Fullstack Manual (PDF)",
+        "path": "/resources/excel-fullstack-manual.pdf"
+      },
+      {
+        "label": "Fullstack Manual (Word)",
+        "path": "/resources/excel-fullstack-manual.docx"
+      }
     ]
   },
   {
@@ -198,8 +246,14 @@
     ],
     "answers": "Fullstack Manual, Chapter 5, Project 7. Open-Meteo is free and needs no API key.",
     "files": [
-      { "label": "Fullstack Manual (PDF)", "path": "/resources/excel-fullstack-manual.pdf" },
-      { "label": "Fullstack Manual (Word)", "path": "/resources/excel-fullstack-manual.docx" }
+      {
+        "label": "Fullstack Manual (PDF)",
+        "path": "/resources/excel-fullstack-manual.pdf"
+      },
+      {
+        "label": "Fullstack Manual (Word)",
+        "path": "/resources/excel-fullstack-manual.docx"
+      }
     ]
   },
   {
@@ -219,8 +273,14 @@
     ],
     "answers": "Fullstack Manual, Chapter 5, Project 8. It includes the core data structure and logic.",
     "files": [
-      { "label": "Fullstack Manual (PDF)", "path": "/resources/excel-fullstack-manual.pdf" },
-      { "label": "Fullstack Manual (Word)", "path": "/resources/excel-fullstack-manual.docx" }
+      {
+        "label": "Fullstack Manual (PDF)",
+        "path": "/resources/excel-fullstack-manual.pdf"
+      },
+      {
+        "label": "Fullstack Manual (Word)",
+        "path": "/resources/excel-fullstack-manual.docx"
+      }
     ]
   },
   {
@@ -233,8 +293,14 @@
     "worksOffline": false,
     "answers": "Fullstack Manual, Chapter 9. It includes the project architecture, the TypeScript types and the registration form component.",
     "files": [
-      { "label": "Fullstack Manual (PDF)", "path": "/resources/excel-fullstack-manual.pdf" },
-      { "label": "Fullstack Manual (Word)", "path": "/resources/excel-fullstack-manual.docx" }
+      {
+        "label": "Fullstack Manual (PDF)",
+        "path": "/resources/excel-fullstack-manual.pdf"
+      },
+      {
+        "label": "Fullstack Manual (Word)",
+        "path": "/resources/excel-fullstack-manual.docx"
+      }
     ]
   },
   {
@@ -246,7 +312,10 @@
     "level": "beginner",
     "worksOffline": true,
     "files": [
-      { "label": "Zip folder", "path": "/resources/practice-files-login-form-and-js-switch.zip" }
+      {
+        "label": "Zip folder",
+        "path": "/resources/practice-files-login-form-and-js-switch.zip"
+      }
     ]
   },
   {
@@ -258,5 +327,35 @@
     "level": "beginner",
     "worksOffline": false,
     "repo": "https://github.com/Xcelsama/Learn-how-to-use-Google-fonts"
+  },
+  {
+    "id": "site-w3schools",
+    "title": "W3Schools",
+    "description": "Free tutorials and references for HTML, CSS and JavaScript, with examples you can try in the browser.",
+    "category": "free-sites",
+    "type": "guide",
+    "level": "beginner",
+    "worksOffline": false,
+    "link": "https://www.w3schools.com/"
+  },
+  {
+    "id": "site-mdn",
+    "title": "MDN Web Docs",
+    "description": "Mozilla's free reference for HTML, CSS and JavaScript. Look things up here when you want the exact rules.",
+    "category": "free-sites",
+    "type": "guide",
+    "level": "intermediate",
+    "worksOffline": false,
+    "link": "https://developer.mozilla.org/"
+  },
+  {
+    "id": "site-freecodecamp",
+    "title": "freeCodeCamp",
+    "description": "Free lessons and projects for learning to code, including HTML, CSS and JavaScript.",
+    "category": "free-sites",
+    "type": "guide",
+    "level": "beginner",
+    "worksOffline": false,
+    "link": "https://www.freecodecamp.org/"
   }
 ]

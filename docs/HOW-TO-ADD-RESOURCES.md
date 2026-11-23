@@ -37,7 +37,7 @@ Copy this, then change every value.
 
 | Field | Values |
 |---|---|
-| `category` | `how-to-code`, `offline-projects`, `explained-code`, `pdfs-guides` |
+| `category` | `how-to-code`, `offline-projects`, `explained-code`, `pdfs-guides`, `free-sites` |
 | `type` | `pdf`, `guide`, `project`, `repo` |
 | `level` | `beginner`, `intermediate` |
 | `worksOffline` | `true` or `false` |
@@ -45,6 +45,7 @@ Copy this, then change every value.
 - `id` must be unique. It becomes the page address: `/r/my-css-notes/`.
 - `files` can hold more than one file. The size is added for you.
 - For a GitHub repo, skip `files` and use `"type": "repo"` with `"repo": "https://github.com/Xcelsama/NAME"`. Only public repos work.
+- For a link to another website, skip `files` and add `"link": "https://..."`. It must start with `https://`.
 - To show a resource on the home page, add `"featured": true`.
 - For a project, you can add `"build"` (a list of what to build), `"steps"` (a list) and `"answers"` (one sentence on where to find them). See Project 1 in the file.
 

@@ -11,7 +11,9 @@ Nothing in the site is invented, but these need your eye.
 7. **Your notes and roadmap.** MY-NOTEBOOK and MY-WEB-DEVELOPMENT-ROAD-MAP are private. Make them public, or send me the content, and I will add entries.
 8. **More repos.** Only Learn-how-to-use-Google-fonts is listed. Bug-Tackler was left out because it is an AI-agent project, and breadcrumbs had no content yet.
 9. **Left out on purpose.** The Nematrian HTML/CSS/JavaScript tutorial text (copyright Nematrian, 2020) and the London App Brewery Web Dev Syllabus PDF belong to other people. Do not upload them unless you have permission.
-10. **Journey page.** I wrote it from your project brief and kept to those facts. Read it and change anything that is not how you would say it. Add a photo or more of your story if you want.
+10. **Journey page.** It now only says you know HTML, CSS and JavaScript, plus one sentence that many resources were made with AI (from your brief). Delete that sentence if you want.
+10b. **Free sites.** W3Schools, MDN and freeCodeCamp are listed as sites you use. I read "double three code" as W3Schools and "MD" as MDN. I chose the levels and descriptions, so check them.
+10c. **Old story removed.** Nothing on the site says you learned on a phone any more. Read it and change anything that is not how you would say it. Add a photo or more of your story if you want.
 11. **`lesson-reference.html` was missing.** Your design spec points to it, but it did not come through. I built from the spec text alone. Send the file if you want me to match it exactly.
 12. **Design parts waiting for real lesson text.** The spec has Try-it widgets, Quick checks and Common mistake cards. They need real lesson content, and I will not make any up. Send me the lessons, or the questions and wrong-versus-right examples, and I will add them.
 13. **Fonts.** The spec asks for Google Fonts (Newsreader, IBM Plex Sans, JetBrains Mono). They load from Google the first time and are cached after that. If data cost matters more, say so and I will switch to the fonts already on the phone.
