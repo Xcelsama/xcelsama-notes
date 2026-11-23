@@ -1,0 +1,19 @@
+{
+  "name": "Xcelsama Notes",
+  "tagline": "Free coding resources you can keep on your phone",
+  "description": "Free coding manuals, offline projects and explained code by Excel (Xcelsama), a self-taught developer giving back what helped him learn.",
+  "siteUrl": "https://xcelsama-notes.pages.dev",
+  "githubUser": "Xcelsama",
+  "githubRepo": "Xcelsama/xcelsama-notes",
+  "need": [
+    "A document editor, like Microsoft Word, to read the manuals",
+    "VS Code, to write the code",
+    "A browser (Chrome or Firefox), to run it"
+  ],
+  "categories": [
+    { "id": "how-to-code", "title": "How to code the proper way", "blurb": "Lessons on writing and debugging code the right way." },
+    { "id": "offline-projects", "title": "Offline projects", "blurb": "Projects you build with just a document editor and VS Code. The answers are in the manual." },
+    { "id": "explained-code", "title": "Explained code and repos", "blurb": "GitHub repositories and code with explanations." },
+    { "id": "pdfs-guides", "title": "PDFs and guides", "blurb": "Full manuals you can download and read offline." }
+  ]
+}

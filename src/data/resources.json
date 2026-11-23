@@ -1,0 +1,262 @@
+[
+  {
+    "id": "fullstack-manual",
+    "title": "Excel Fullstack Manual",
+    "description": "A self-study manual in four phases: HTML and CSS, JavaScript, a project you plan yourself, then TypeScript and Next.js 14. Includes the projects listed on this site. Written to be used offline.",
+    "category": "pdfs-guides",
+    "type": "pdf",
+    "level": "beginner",
+    "worksOffline": true,
+    "featured": true,
+    "files": [
+      { "label": "PDF (99 pages)", "path": "/resources/excel-fullstack-manual.pdf" },
+      { "label": "Word document", "path": "/resources/excel-fullstack-manual.docx" }
+    ]
+  },
+  {
+    "id": "mastery-manual",
+    "title": "HTML, CSS and JavaScript Mastery Manual",
+    "description": "A self-study manual in four phases, from HTML and CSS fundamentals to TypeScript and Next.js. Word document.",
+    "category": "pdfs-guides",
+    "type": "guide",
+    "level": "beginner",
+    "worksOffline": true,
+    "files": [
+      { "label": "Word document", "path": "/resources/html-css-js-mastery-manual.docx" }
+    ]
+  },
+  {
+    "id": "image-fitting-css-debugging",
+    "title": "Image fitting and CSS debugging",
+    "description": "Four short lessons from a real debugging session: fitting a large image into a small box, a typo that stopped the stylesheet loading, a class name on the wrong element, and img versus CSS background-image. Ends with a checklist.",
+    "category": "how-to-code",
+    "type": "pdf",
+    "level": "beginner",
+    "worksOffline": true,
+    "featured": true,
+    "files": [
+      { "label": "PDF (7 pages)", "path": "/resources/image-fitting-css-debugging-recap.pdf" }
+    ]
+  },
+  {
+    "id": "project-1-profile-page",
+    "title": "Project 1: Personal profile page",
+    "description": "Build a responsive profile page. Tests HTML structure, text elements, images, links, the box model, flexbox and basic CSS.",
+    "category": "offline-projects",
+    "type": "project",
+    "level": "beginner",
+    "worksOffline": true,
+    "featured": true,
+    "build": [
+      "A profile photo or avatar at the top (any image file)",
+      "Your name as the h1 and your title as the h2",
+      "A short bio paragraph",
+      "A skills section listing your tech stack",
+      "A projects section with 2 to 3 project cards",
+      "A contact section with links",
+      "A page that works on both mobile and desktop"
+    ],
+    "steps": [
+      "Create index.html and style.css in the same folder.",
+      "Write the full HTML boilerplate first.",
+      "Add all your HTML content, with no CSS yet. Get the structure right.",
+      "Add a CSS reset and box-sizing.",
+      "Style the body: font, background colour, max-width and margin: 0 auto.",
+      "Build and style each section one at a time.",
+      "Add hover effects on project cards and links.",
+      "Add a media query so it looks good on mobile."
+    ],
+    "answers": "Fullstack Manual, Chapter 3, Project 1. It includes starter HTML to read and then type yourself.",
+    "files": [
+      { "label": "Fullstack Manual (PDF)", "path": "/resources/excel-fullstack-manual.pdf" },
+      { "label": "Fullstack Manual (Word)", "path": "/resources/excel-fullstack-manual.docx" }
+    ]
+  },
+  {
+    "id": "project-2-pricing-cards",
+    "title": "Project 2: Responsive pricing cards",
+    "description": "Build three pricing cards that rearrange for desktop, tablet and mobile. Tests CSS Grid, flexbox, variables, hover effects and responsive layout.",
+    "category": "offline-projects",
+    "type": "project",
+    "level": "beginner",
+    "worksOffline": true,
+    "build": [
+      "Three pricing cards: Free, Pro and Enterprise",
+      "Each card has a plan name, a price, a feature list and a button",
+      "The middle card (Pro) is highlighted with a different border or background",
+      "Desktop: all 3 cards side by side",
+      "Tablet: 2 columns",
+      "Mobile: 1 column, stacked"
+    ],
+    "answers": "Fullstack Manual, Chapter 3, Project 2. It includes the key CSS techniques and a dark mode challenge for when you finish.",
+    "files": [
+      { "label": "Fullstack Manual (PDF)", "path": "/resources/excel-fullstack-manual.pdf" },
+      { "label": "Fullstack Manual (Word)", "path": "/resources/excel-fullstack-manual.docx" }
+    ]
+  },
+  {
+    "id": "project-3-hamburger-nav",
+    "title": "Project 3: Navigation bar with mobile menu",
+    "description": "Build a fixed top bar that turns into a hamburger menu on phones. Tests flexbox, CSS transitions, position fixed, z-index and media queries.",
+    "category": "offline-projects",
+    "type": "project",
+    "level": "beginner",
+    "worksOffline": true,
+    "build": [
+      "A fixed top navigation bar with the logo on the left and links on the right",
+      "Desktop: all links visible in a row",
+      "Mobile: links hidden and a hamburger icon (three lines) visible",
+      "Clicking the hamburger shows and hides the menu",
+      "The menu slides in with a CSS transition"
+    ],
+    "answers": "Fullstack Manual, Chapter 3, Project 3. It includes the key HTML structure.",
+    "files": [
+      { "label": "Fullstack Manual (PDF)", "path": "/resources/excel-fullstack-manual.pdf" },
+      { "label": "Fullstack Manual (Word)", "path": "/resources/excel-fullstack-manual.docx" }
+    ]
+  },
+  {
+    "id": "project-4-login-signup-form",
+    "title": "Project 4: Login and signup form",
+    "description": "Build a login form that switches to a signup form. Tests forms, input styling, CSS pseudo-classes, validation states and transitions.",
+    "category": "offline-projects",
+    "type": "project",
+    "level": "beginner",
+    "worksOffline": true,
+    "build": [
+      "A login form with email and password inputs",
+      "A \"switch to signup\" link that shows the signup form",
+      "A signup form with name, email, password and confirm password",
+      "Focus styles on inputs (blue border when clicked)",
+      "Error styling (red border and a message for invalid input)",
+      "Forms centred on the page, with a max-width of 400px"
+    ],
+    "answers": "Fullstack Manual, Chapter 3, Project 4. It includes the key CSS for form styling.",
+    "files": [
+      { "label": "Fullstack Manual (PDF)", "path": "/resources/excel-fullstack-manual.pdf" },
+      { "label": "Fullstack Manual (Word)", "path": "/resources/excel-fullstack-manual.docx" }
+    ]
+  },
+  {
+    "id": "project-5-todo-list",
+    "title": "Project 5: Todo list app",
+    "description": "Build a todo list that remembers your items after a refresh. Tests DOM manipulation, events, localStorage, dynamic rendering and array methods.",
+    "category": "offline-projects",
+    "type": "project",
+    "level": "beginner",
+    "worksOffline": true,
+    "build": [
+      "Add a todo by typing and pressing Enter or clicking Add",
+      "Each todo shows its text and a delete button",
+      "Click a todo to mark it complete (strikethrough)",
+      "Filter todos: All, Active and Completed",
+      "Show the count of remaining active todos",
+      "Save all todos to localStorage so they survive a page refresh"
+    ],
+    "answers": "Fullstack Manual, Chapter 5, Project 5. It includes the core JavaScript structure.",
+    "files": [
+      { "label": "Fullstack Manual (PDF)", "path": "/resources/excel-fullstack-manual.pdf" },
+      { "label": "Fullstack Manual (Word)", "path": "/resources/excel-fullstack-manual.docx" }
+    ]
+  },
+  {
+    "id": "project-6-quiz-app",
+    "title": "Project 6: Quiz app",
+    "description": "Build a multiple-choice quiz with a score at the end. Tests arrays of objects, dynamic rendering, score tracking, conditional logic and DOM updates.",
+    "category": "offline-projects",
+    "type": "project",
+    "level": "beginner",
+    "worksOffline": true,
+    "build": [
+      "5 to 10 multiple-choice questions stored in a JavaScript array",
+      "One question at a time with 4 answer options",
+      "Correct or incorrect feedback after each answer",
+      "A progress bar showing the current question number",
+      "A final score screen with a percentage and a restart button"
+    ],
+    "answers": "Fullstack Manual, Chapter 5, Project 6. It includes the data structure for the questions.",
+    "files": [
+      { "label": "Fullstack Manual (PDF)", "path": "/resources/excel-fullstack-manual.pdf" },
+      { "label": "Fullstack Manual (Word)", "path": "/resources/excel-fullstack-manual.docx" }
+    ]
+  },
+  {
+    "id": "project-7-weather-app",
+    "title": "Project 7: Weather app",
+    "description": "Build a weather app that looks up a city. Tests the fetch API, async/await, real JSON data and dynamic DOM updates. This one needs an internet connection while you test it.",
+    "category": "offline-projects",
+    "type": "project",
+    "level": "intermediate",
+    "worksOffline": false,
+    "build": [
+      "A search box where the user enters a city name",
+      "Fetch the city's coordinates from the Open-Meteo geocoding API",
+      "Fetch the current weather for those coordinates",
+      "Show temperature, weather condition, wind speed and humidity",
+      "Show a loading state while fetching",
+      "Show an error message if the city is not found"
+    ],
+    "answers": "Fullstack Manual, Chapter 5, Project 7. Open-Meteo is free and needs no API key.",
+    "files": [
+      { "label": "Fullstack Manual (PDF)", "path": "/resources/excel-fullstack-manual.pdf" },
+      { "label": "Fullstack Manual (Word)", "path": "/resources/excel-fullstack-manual.docx" }
+    ]
+  },
+  {
+    "id": "project-8-expense-tracker",
+    "title": "Project 8: Expense tracker",
+    "description": "Build an income and expense tracker that saves your entries. The manual calls it the most advanced Phase 2 project. Tests objects, arrays, reduce, dynamic rendering and localStorage.",
+    "category": "offline-projects",
+    "type": "project",
+    "level": "intermediate",
+    "worksOffline": true,
+    "build": [
+      "Add income or expense entries with a description, an amount and a type",
+      "Show running totals: total income, total expenses and balance",
+      "List all transactions, colour-coded (green for income, red for expenses)",
+      "Delete individual transactions",
+      "Save all data with localStorage"
+    ],
+    "answers": "Fullstack Manual, Chapter 5, Project 8. It includes the core data structure and logic.",
+    "files": [
+      { "label": "Fullstack Manual (PDF)", "path": "/resources/excel-fullstack-manual.pdf" },
+      { "label": "Fullstack Manual (Word)", "path": "/resources/excel-fullstack-manual.docx" }
+    ]
+  },
+  {
+    "id": "church-registry-nextjs",
+    "title": "Capstone: Church registry in Next.js",
+    "description": "The manual's final project: build a church registry app with Next.js 14 and TypeScript, with proper architecture, TypeScript types and Next.js routing. It needs Node.js and an internet connection to set up.",
+    "category": "explained-code",
+    "type": "project",
+    "level": "intermediate",
+    "worksOffline": false,
+    "answers": "Fullstack Manual, Chapter 9. It includes the project architecture, the TypeScript types and the registration form component.",
+    "files": [
+      { "label": "Fullstack Manual (PDF)", "path": "/resources/excel-fullstack-manual.pdf" },
+      { "label": "Fullstack Manual (Word)", "path": "/resources/excel-fullstack-manual.docx" }
+    ]
+  },
+  {
+    "id": "practice-files",
+    "title": "Practice files: login form and JavaScript switch",
+    "description": "Two small, unfinished practice files: a login form page (HTML and CSS) and a JavaScript switch statement example. Both still contain mistakes, so you can open them and try to fix them.",
+    "category": "offline-projects",
+    "type": "project",
+    "level": "beginner",
+    "worksOffline": true,
+    "files": [
+      { "label": "Zip folder", "path": "/resources/practice-files-login-form-and-js-switch.zip" }
+    ]
+  },
+  {
+    "id": "repo-google-fonts",
+    "title": "Learn how to use Google Fonts",
+    "description": "A very small repo with a short note on loading a Google Font with a link tag in the head, plus a sample page.",
+    "category": "explained-code",
+    "type": "repo",
+    "level": "beginner",
+    "worksOffline": false,
+    "repo": "https://github.com/Xcelsama/Learn-how-to-use-Google-fonts"
+  }
+]

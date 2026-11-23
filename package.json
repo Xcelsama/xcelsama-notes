@@ -1,0 +1,13 @@
+{
+  "name": "xcelsama-notes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Free coding resources hub. Static site, no dependencies.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
